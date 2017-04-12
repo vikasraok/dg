@@ -1,0 +1,11 @@
+<!--<div ng-repeat="inverter in inverters">{{
+  inverter.name}}</div>-->
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" ng-repeat="inverter in inverters">
+    <div class="well" ng-click="showInverter(inverter)">
+      <b class="btn-block">Name : {{inverter.name}}</b>
+      <span class="btn-block">Generation : {{inverter.generation}}</span>
+      <span class="btn-block">Power : {{inverter.power}}</span>
+    </div>
+  </div>
+</div>

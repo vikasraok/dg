@@ -1,0 +1,22 @@
+<div class="well">
+  <div class="row"><div class="col-sm-12">
+    Name : {{inverter.name}}
+  </div></div>
+  <div class="row"><div class="col-sm-12">Generation : {{inverter.generation}}</div></div>
+  <div class="row"><div class="col-sm-12">Power : {{inverter.power}}</div></div>
+  <div class="row"><div class="col-sm-12">Connected : {{inverter.connected}}</div></div>
+  <div class="row"><div class="col-sm-12">Key : {{inverter.key}}</div></div>
+  <div class="row"><div class="col-sm-12">Orientation : {{inverter.orientation}}</div></div>
+  <div class="row"><div class="col-sm-12">Capacity : {{inverter.capacity}}</div></div>
+  <div class="row"><div class="col-sm-12">Solar Group : {{inverter.solar_group}}</div></div>
+  <div class="row"><div class="col-sm-12">Inside Temperature : {{inverter.inside_temperature}}</div></div>
+  <div class="row"><div class="col-sm-12">Total Yield : {{inverter.total_yield}}</div></div>
+  <div class="row"><div class="col-sm-12">Total AJBS : {{inverter.total_ajbs}}</div></div>
+  <div class="row"><div class="col-sm-12">Disconnected AJBS : {{inverter.disconnected_ajbs}}</div></div>
+  <b>Last Three Errors :</b>
+  <div class="row well">
+    <div class="col-sm-12 " ng-repeat="errors  in inverter.last_three_errors">
+      * {{errors.error_code}} | {{errors.timestamp}}
+    </div>
+  </div>
+</div>
